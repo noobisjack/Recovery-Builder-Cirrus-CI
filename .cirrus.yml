@@ -8,7 +8,7 @@ env:
     TARGET: "bootimage"
     BUILD_TYPE: "eng"
     COMMAND: "git clone https://gitlab.com/OrangeFox/misc/theme bootable/recovery/gui/theme --depth=1"
-    COMMAND2: ""
+    COMMAND2: "export ALLOW_MISSING_DEPENDENCIES=true"
     TG_TOKEN: "ENCRYPTED[ba114ab260e16ec1509fdf7feb928222ac87f272d56a7a28ec884582cfe8106d49a7840098af770b34c41d75a618f602]"
     TG_CHAT_ID: "ENCRYPTED[e829773cf31c517e0ebc9f80aa4fba71d062fed3db2193ac7701593971a8ef83626e1f8e8aa69c7471b7943db4d8a082]"
     TZ: "Asia/Dhaka"
