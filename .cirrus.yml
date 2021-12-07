@@ -2,10 +2,10 @@ env:
     RCLONE: "ENCRYPTED[eb2e333941bc6d77ce3e1d8f4b8267e863bc61a2eb575e7f8b9d8286df2f4edb8d6e13e2bdd0b2a1c1355be3e480507e]"
     MANIFEST: "https://gitlab.com/OrangeFox/Manifest"
     MANIFEST_BRANCH: "fox_9.0"
-    DEVICE: "itel-L6006"
-    DT_LINK: "https://github.com/noobisjack/device_itel_itel-L6006"
-    DT_PATH: "device/itel/itel-L6006"
-    TARGET: "bootimage"
+    DEVICE: "m51"
+    DT_LINK: "https://github.com/twrpdtgen/android_device_samsung_m51"
+    DT_PATH: "device/samsung/m51"
+    TARGET: "recoveryimage"
     BUILD_TYPE: "eng"
     COMMAND: "git clone https://gitlab.com/OrangeFox/misc/theme bootable/recovery/gui/theme --depth=1"
     COMMAND2: "export ALLOW_MISSING_DEPENDENCIES=true"
@@ -20,7 +20,7 @@ task:
   container:
       image: marvelmathesh/docker:rom
       cpu: 8
-      memory: 16G
+      memory: 32G
 
   Build-Env-Setup_background_script:
        - export DEBIAN_FRONTEND=noninteractive
