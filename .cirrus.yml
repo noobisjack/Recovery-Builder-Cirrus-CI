@@ -5,7 +5,7 @@ env:
     DEVICE: "itel-L6006"
     DT_LINK: "https://github.com/noobisjack/device_itel_itel-L6006"
     DT_PATH: "device/itel/itel-L6006"
-    TARGET: "recoveryimage"
+    TARGET: "bootimage"
     BUILD_TYPE: "eng"
     COMMAND: "git clone https://gitlab.com/OrangeFox/misc/theme bootable/recovery/gui/theme --depth=1"
     COMMAND2: ""
