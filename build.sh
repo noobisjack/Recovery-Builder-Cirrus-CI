@@ -12,7 +12,6 @@ repo init -u $MANIFEST -b $MANIFEST_BRANCH --depth=1 --groups=all,-notdefault,-d
 repo sync -c --no-clone-bundle --no-tags --optimized-fetch --force-sync -j$(nproc --all)
 git clone $DT_LINK --depth=1 --single-branch $DT_PATH
 $COMMAND #use if needed ;)
-yum install -y pciutils system-logos which libxml2 dmidecode net-tools virt-what apr apr-util curl mailcap libjpeg libtool-ltdl unixODBC libxslt zlib
 
 # export sync end time and diff with sync start
 SYNC_END=$(date +"%s")
@@ -44,7 +43,7 @@ ccache -z
 
 . build/envsetup.sh && lunch omni_$DEVICE-$BUILD_TYPE
 $COMMAND2 #use if needed ;)
-make $TARGET -j8 2>&1 | tee build.log
+mka $TARGET -j8 2>&1 | tee build.log
 
 # export sync end time and diff with build start
 BUILD_END=$(date +"%s")
