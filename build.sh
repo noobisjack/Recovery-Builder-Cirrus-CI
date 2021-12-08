@@ -50,7 +50,7 @@ BUILD_END=$(date +"%s")
 DIFF=$((BUILD_END - BUILD_START))
 
 ls -a $(pwd)/out/target/product/$DEVICE/ # show /out contents
-ZIP=$(find $(pwd)/out/target/product/$DEVICE/ -maxdepth 1 -name "*$DEVICE*.img" | perl -e 'print sort { length($b) <=> length($a) } <>' | head -n 1)
+ZIP=$(find $(pwd)/out/target/product/$DEVICE/ -maxdepth 1 -name "*$DEVICE*.zip" | perl -e 'print sort { length($b) <=> length($a) } <>' | head -n 1)
 ZIPNAME=$(basename $ZIP)
 ZIPSIZE=$(du -sh $ZIP |  awk '{print $1}')
 echo "$ZIP"
