@@ -3,7 +3,7 @@ env:
     MANIFEST: "https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git"
     MANIFEST_BRANCH: "twrp-9.0"
     DEVICE: "m51"
-    DT_LINK: "https://github.com/twrpdtgen/android_device_samsung_m51"
+    DT_LINK: "https://github.com/twrpgendt-jack/android_device_samsung_m51"
     DT_PATH: "device/samsung/m51"
     TARGET: "recoveryimage"
     BUILD_TYPE: "eng"
