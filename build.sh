@@ -65,7 +65,7 @@ telegram_build() {
 
 telegram_post(){
  if [ -f $(pwd)/out/target/product/$DEVICE/$ZIPNAME ]; then
-	rclone copy $ZIP MarvelMathesh:recovery -P
+	rclone copy $ZIP Jack:recovery -P
 	MD5CHECK=$(md5sum $ZIP | cut -d' ' -f1)
 	DWD=$DRIVE$ZIPNAME
 	telegram_message "
