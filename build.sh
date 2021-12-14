@@ -29,7 +29,7 @@ telegram_message "
 	*🌟 Build Triggered 🌟*
 	*Date:* \`$(date +"%d-%m-%Y %T")\`
         *Build started by: @noob_is_jack*
-        *For Device : $DEVICE
+        *For Device : $DEVICE*
 	*✅ Sync finished after $((SDIFF / 60)) minute(s) and $((SDIFF % 60)) seconds*"  &> /dev/null
 
 # export build start time
