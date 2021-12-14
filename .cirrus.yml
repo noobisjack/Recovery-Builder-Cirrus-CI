@@ -3,7 +3,7 @@ env:
     MANIFEST: "https://gitlab.com/OrangeFox/Manifest"
     MANIFEST_BRANCH: "fox_9.0"
     DEVICE: "m32"
-    DT_LINK: "https://github.com/twrpdtgen/android_device_samsung_m32"
+    DT_LINK: "https://github.com/twrpgendt-jack/android_device_samsung_m32"
     DT_PATH: "device/samsung/m32"
     TARGET: "recoveryimage"
     BUILD_TYPE: "eng"
